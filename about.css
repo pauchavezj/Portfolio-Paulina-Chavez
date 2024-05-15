@@ -49,9 +49,7 @@
 h1 {
   font-family: var(--heading-font);
   color: white;
-  font-size: 28pt;
-  font-weight: lighter;
-  border-left: 50%;
+  font-size: 38pt;
 }
 p {
   color: white;
@@ -60,8 +58,15 @@ p {
   border-left: 30px;
 }
 .content {
-  width: 100%;
   position: absolute;
-  text-align: center;
+  margin-left: 50%;
   padding-top: 10%;
+}
+.me img {
+  width: 500px;
+}
+.me {
+  position: absolute;
+  margin-left: 3%;
+  padding-top: 0%;
 }

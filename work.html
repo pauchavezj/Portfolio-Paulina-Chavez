@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <meta
+    name="description"
+    content="paulina chavez graphic designer creative studio"
+  />
+  <link rel="stylesheet" href="./work.css" />
+  <link rel="icon" href="./img/icon.png" />
+  <body>
+    <div class="navbar">
+      <img src="./img/1x/Logo naranja.png" class="logo" />
+      <ul>
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./work.html">WORK</a></li>
+        <li><a href="./sayhello.html">SAY HELLO</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1>Take a look at some of my work</h1>
+    </div>
+    <div class="gallery">
+      <div id="openDialog" class="proyecto1">
+        <img src="./img/deko1.jpeg" alt="" />
+      </div>
+      <div class="proyecto2">
+        <img src="./img/yoga1.jpeg" alt="" />
+      </div>
+      <div class="proyecto3">
+        <img src="./img/ukiyo publicity mockup.png" alt="" />
+      </div>
+      <div class="proyecto4">
+        <img src="./img/nomadic-poster.png" alt="" />
+      </div>
+    </div>
+    <div>
+      <h2>Don't be shy, say hello!</h2>
+    </div>
+    <dialog id="proyecto1" class="deko">
+      <button id="closeDialog" class="closeDialog">x</button>
+      <img src="./img/deko2.jpeg" />
+      <br />
+      <img src="./img/deko3.jpeg" />
+      <br />
+      <img src="./img/deko4.jpeg" />
+      <br />
+      <img src="./img/deko5.jpeg" />
+      <br />
+      <img src="./img/deko6.jpeg" />
+      <br />
+    </dialog>
+    <dialog id="proyecto2" class="yoga">
+      <button id="closeDialog" class="closeDialog">x</button>
+      <img src="./img/yoga2.jpeg" />
+      <br />
+      <img src="./img/yoga3.jpeg" />
+      <br />
+    </dialog>
+    <script>
+      (function () {
+        var updateButton = document.getElementById("openDialog");
+        var cancelButton = document.getElementById("closeDialog");
+        var favDialog = document.getElementById("proyecto1");
+
+        // Update button opens a modal dialog
+        updateButton.addEventListener("click", function () {
+          favDialog.showModal();
+        });
+
+        // Form cancel button closes the dialog box
+        cancelButton.addEventListener("click", function () {
+          favDialog.close();
+        });
+      })();
+    </script>
+  </body>
+</html>
